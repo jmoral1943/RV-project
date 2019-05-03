@@ -10,16 +10,3 @@ function myFunction() {
     header.classList.remove("sticky");
   }
 }
-
-function formValidate() {
-  var valid = document.getElementById("name");
-  if( valid == "") {
-    valid.style.border = "red"; 
-  }
-}
-
-var images = document.getElementsByClassName("sliders");
-
-function sliders () {
-  images.style.animation = "moveImages 20s";
-}
