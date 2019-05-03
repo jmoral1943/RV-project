@@ -450,20 +450,43 @@ body{
 .todo-content {
     display: flex;
     margin: 2em;
-    justify-content: space-around;
+    align-items: center;
 }
 .todo h2{
     font-size: 2.5em;
     margin-bottom: 1em;
+    text-align: center;
+}
+.todo h2 a{
+    color: black;
 }
 
 .todo p {
     font-size: 1.5em;
+    margin-top: .5em;
+    margin-bottom: .5em;
+}
+
+.todo .todo-introduction {
+    margin-bottom: 2em;
 }
 
 .todo {
     margin-left: 1.5em;
-    text-align: center;
+}
+
+.todo ul {
+    list-style-type: circle;
+    list-style-position: inside;
+}
+
+.todo ul li {
+    margin-bottom: 1em;
+    font-size: 1.5rem;
+}
+
+.todo-list {
+    margin-bottom: .5em;
 }
 
 .first-eat-content {
@@ -539,11 +562,47 @@ textarea {
 
 
 .first- img {
-    width: 50vw;
+    width: 48vw;
     height: 60vh;
 }
 
 .first- {
+    margin-bottom: 6em;
+}
+
+.second- img {
+    width: 40vw;
+    height: 78vh;
+}
+
+.second- {
+    margin-bottom: 6em;
+}
+
+.third- img {
+    width: 35vw;
+    height: 90vh;
+}
+
+.third- {
+    margin-bottom: 6em;
+}
+
+.fourth- img {
+    width: 58vw;
+    height: 68vh;
+}
+
+.fourth- {
+    margin-bottom: 6em;
+}
+
+.fifth- img {
+    width: 35vw;
+    height: 90vh;
+}
+
+.fifth- {
     margin-bottom: 6em;
 }
 
