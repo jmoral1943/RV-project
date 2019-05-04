@@ -473,6 +473,7 @@ body{
 
 .todo {
     margin-left: 1.5em;
+    width: 40%;
 }
 
 .todo ul {
@@ -568,15 +569,17 @@ textarea {
 
 .first- {
     margin-bottom: 6em;
+    display: flex;
 }
 
 .second- img {
     width: 40vw;
-    height: 78vh;
+    height: 90vh;
 }
 
 .second- {
     margin-bottom: 6em;
+    display: flex;
 }
 
 .third- img {
@@ -586,6 +589,7 @@ textarea {
 
 .third- {
     margin-bottom: 6em;
+    display: flex;
 }
 
 .fourth- img {
@@ -595,15 +599,17 @@ textarea {
 
 .fourth- {
     margin-bottom: 6em;
+    display: flex;
 }
 
 .fifth- img {
-    width: 35vw;
+    width: 40vw;
     height: 90vh;
 }
 
 .fifth- {
     margin-bottom: 6em;
+    display: flex;
 }
 
 .main-todo-content {
@@ -739,4 +745,8 @@ textarea {
     text-align: center;
     margin-right: 1em;
     margin-left: 1em;
+}
+
+.mySlides {
+    display:none;
 }
