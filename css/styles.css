@@ -395,10 +395,11 @@ body{
     margin-bottom: 0;
     flex-grow: 1;
     height: 20%;
-    justify-content: space-evenly;
     align-items: center;
-    padding-top: 2.5%;
-    padding-bottom: 2.5%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    width: 100%;
+    justify-content: space-around;
 }
 
 .footer p {
@@ -411,10 +412,20 @@ body{
     color: #292e36;
 }
 
-.footer img {
-    width: 10%;
-    height: 10%;
+.footer-one img {
+    width: 15%;
+    height: 15%;
+    margin-right: 20%;
 }
+
+.footer-one {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 50%;
+}
+
+
 
 .todo-icons{
     z-index: 20;
@@ -713,9 +724,9 @@ textarea {
 
 .inner-eat-first {
     background-color: white;
-    width: 28vw;
+    width: 26vw;
     height: 40vh;
-    margin-left: 3%;
+    margin-left: 5%;
     padding: 1em;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -740,9 +751,9 @@ textarea {
 .restaurants-one-image-one img {
     position: absolute;
     width: 22vw;
-    height: 43vh;
+    height: 48vh;
     top: 0;
-    left: 38vw;
+    left: 36vw;
     padding: .6em;
     background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -750,7 +761,7 @@ textarea {
 
 .restaurants-one-image-two img {
     position: absolute;
-    width: 40vw;
+    width: 35vw;
     height: 40vh;
     bottom: 3vh;
     right: 2vw;
@@ -775,7 +786,7 @@ textarea {
     width: 30vw;
     height: 32vh;
     bottom: 5vh;
-    left: 5vw;
+    left: 3%;
     padding: .6em;
     background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -827,4 +838,12 @@ textarea {
 }
 .wrap:hover p {
     cursor:pointer;
+}
+
+
+.restaurants-two {
+    background-color: rgb(234, 234, 234);
+    position: relative;
+    height: 92vh;
+    width: 100%;
 }
