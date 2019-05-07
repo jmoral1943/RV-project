@@ -32,15 +32,18 @@
 
         <div class="wrap">
             <header>
-                <p id="eating">Eating Experience</p>
-                <p id="dill">Dill</p>
-                <p id="vox">VOX</p>
-                <p id="grillid">Grillid</p>
-                <p id="sjávargrillid">Sjávargrillid</p>
+                <i class="fas fa-angle-double-left"id="minusOne"></i>
+                <p id="eating" onclick="appearDiv(0)">Eating Experience</p>
+                <p id="dill"  onclick="appearDiv(1)">Dill</p>
+                <p id="vox"  onclick="appearDiv(2)">VOX</p>
+                <p id="grillid" onclick="appearDiv(3)">Grillid</p>
+                <p id="sjávargrillid" onclick="appearDiv(4)">Sjávargrillid</p>
+                <i class="fas fa-angle-double-right" id="plusOne"></i>
             </header>
         </div>
 
         <div class="main-content">
+            
 
             <div class="restaurants restaurants-one">
                 <div class="inner-eat-first">
@@ -73,9 +76,6 @@
                     <img src="images/eat9.jpeg">
                 </div>
 
-                <button id="minusOne">&#10094;</button>
-                <button id="plusOne" >&#10095;</button>
-
             </div>
 
             <div class="restaurants restaurants-two" id="dill">
@@ -88,8 +88,6 @@
                         </p>
                         
                     </div>
-                    <button id="minusOne-two">&#10094;</button>
-                    <button id="plusOne-two">&#10095;</button>
             </div>
 
             <div class="restaurants restaurants-three" id="vox">
@@ -103,8 +101,6 @@
                         At the VOX there motto is</p>
                     <p> - Where relaxed elegance meets refined hospitality</p>
                 </div>
-                <button id="minusOne-three">&#10094;</button>
-                <button id="plusOne-three">&#10095;</button>
             </div>
 
             <div class="restaurants restaurants-four" id="grillid">
@@ -119,8 +115,6 @@
                         comes with wine pairing that the restaurant has been lauded for.
                     </p>
                 </div>
-                <button id="minusOne-four">&#10094;</button>
-                <button id="plusOne-four">&#10095;</button>
             </div>
 
             <div class="restaurants restaurants-four">
@@ -132,8 +126,6 @@
                         available to Iceland. They have multiple flavor combinations from mushroom and chili to grilled beef chuck and langoustine with potato.
                     </p>
                 </div>
-                <button id="minusOne-five">&#10094;</button>
-                <button id="plusOne-five">&#10095;</button>
             </div>
         </div>
 

@@ -170,11 +170,12 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
+    
 }
 .container{
-    width: 100vw;
+    width: 100%;
     height: 100vh;
 }
 
@@ -707,7 +708,7 @@ textarea {
     background-color: rgb(234, 234, 234);
     position: relative;
     height: 92vh;
-    width: 100vw;
+    width: 100%;
 }
 
 .inner-eat-first {
@@ -771,7 +772,7 @@ textarea {
 
 .restaurants-one-image-four img {
     position: absolute;
-    width: 35vw;
+    width: 30vw;
     height: 32vh;
     bottom: 5vh;
     left: 5vw;
@@ -791,46 +792,22 @@ textarea {
     position: relative;
 }
 
-#minusOne,
-#minusOne-two,
-#minusOne-three,
-#minusOne-four,
-#minusOne-five {
-    position: absolute;
-    left:0;
-    bottom: 50%;
-    z-index: 200;
+#minusOne {
     font-size: 20px;
-    padding: 16px;
     opacity: .5;
     transition: opacity 1s;
+    padding-left: 8px;
 }
 
-#plusOne,
-#plusOne-two,
-#plusOne-three,
-#plusOne-four,
-#plusOne-five {
-    position: absolute;
-    right:0;
-    bottom: 50%;
-    z-index: 200;
+#plusOne {
     font-size: 20px;
-    padding: 16px;
+    padding-right: 8px;
     opacity: .5;
     transition: opacity 1s;
 }
 
 #plusOne:hover,
-#plusOne-two:hover,
-#plusOne-three:hover,
-#plusOne-four:hover,
-#plusOne-five:hover,
-#minusOne:hover,
-#minusOne-two:hover,
-#minusOne-three:hover,
-#minusOne-four:hover,
-#minusOne-five:hover {
+#minusOne:hover {
     cursor:pointer;
     opacity: 2;
 
@@ -838,9 +815,11 @@ textarea {
 .wrap header {
     display: flex;
     width: 100%;
-    justify-content: space-evenly;
+    justify-content: space-between;
     margin-top: 1em;
     margin-bottom: 1em;
+    position: relative;
+    align-items: center;
 }
 
 .wrap header p {

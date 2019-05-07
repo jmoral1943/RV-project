@@ -1,100 +1,33 @@
 let restaurantsIndex = 0
-let showRestaurant = $('.restaurants');
+let showRestaurant = document.getElementsByClassName('restaurants');
 
-$('#eating').on('click', () => {
-    dispearDiv();
-    restaurantsIndex = 0;
-    showRestaurant.eq(restaurantsIndex).show();
-})
-
-$('#dill').on('click', () => {
-    dispearDiv();
-    restaurantsIndex = 1;
-    showRestaurant.eq(restaurantsIndex).show();
-})
-
-$('#vox').on('click', () => {
-    dispearDiv();
-    restaurantsIndex = 2;
-    showRestaurant.eq(restaurantsIndex).show();
-})
-
-$('#grillid').on('click', () => {
-    dispearDiv();
-    restaurantsIndex = 3;
-    showRestaurant.eq(restaurantsIndex).show();
-})
-
-$('#sjávargrillid').on('click', () => {
-    dispearDiv();
-    restaurantsIndex = 4;
-    showRestaurant.eq(restaurantsIndex).show();
-})
-
-$('#plusOne').on('click', () => {
+document.getElementById('plusOne').addEventListener('click', () => {
     dispearDiv();
     restaurantsIndex += 1;
-    showRestaurant.eq(restaurantsIndex).show();
+    if(restaurantsIndex > 4) {
+        restaurantsIndex = 0;
+    }
+    showRestaurant[restaurantsIndex].style.display = "block";
 });
 
-$('#minusOne').on('click', () => {
+document.getElementById('minusOne').addEventListener('click', () => {
     dispearDiv();
     restaurantsIndex -= 1;
-    showRestaurant.eq(restaurantsIndex).show();
-});
-
-$('#plusOne-two').on('click', () => {
-    dispearDiv();
-    restaurantsIndex += 1;
-    showRestaurant.eq(restaurantsIndex).show();
-});
-
-$('#minusOne-two').on('click', () => {
-    dispearDiv();
-    restaurantsIndex -= 1;
-    showRestaurant.eq(restaurantsIndex).show();
-});
-
-$('#plusOne-three').on('click', () => {
-    dispearDiv();
-    restaurantsIndex += 1;
-    showRestaurant.eq(restaurantsIndex).show();
-});
-
-$('#minusOne-three').on('click', () => {
-    dispearDiv();
-    restaurantsIndex -= 1;
-    showRestaurant.eq(restaurantsIndex).show();
-});
-
-$('#plusOne-four').on('click', () => {
-    dispearDiv();
-    restaurantsIndex += 1;
-    showRestaurant.eq(restaurantsIndex).show();
-});
-
-$('#minusOne-four').on('click', () => {
-    dispearDiv();
-    restaurantsIndex -= 1;
-    showRestaurant.eq(restaurantsIndex).show();
-});
-
-
-$('#plusOne-five').on('click', () => {
-    dispearDiv();
-    restaurantsIndex = 0;
-    showRestaurant.eq(restaurantsIndex).show();
-});
-
-$('#minusOne-five').on('click', () => {
-    dispearDiv();
-    restaurantsIndex -= 1;
-    showRestaurant.eq(restaurantsIndex).show();
+    if(restaurantsIndex < 0) {
+        restaurantsIndex = 4;
+    }
+    showRestaurant[restaurantsIndex].style.display = "block";
 });
 
 const dispearDiv = () => {
     let i = 0;
     for(i = 0; i < showRestaurant.length; i++){
-        showRestaurant.eq(i).css({display: 'none'});
+        showRestaurant[restaurantsIndex].style.display = "none";
     }
+}
+
+const appearDiv = (n) => {
+    dispearDiv();
+    restaurantsIndex = n;
+    showRestaurant[restaurantsIndex].style.display = "block";
 }
