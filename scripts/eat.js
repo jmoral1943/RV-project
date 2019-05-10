@@ -7,7 +7,7 @@ document.getElementById('plusOne').addEventListener('click', () => {
     if(restaurantsIndex > 4) {
         restaurantsIndex = 0;
     }
-    showRestaurant[restaurantsIndex].style.display = "block";
+    showRestaurant[restaurantsIndex].style.display = "flex";
 });
 
 document.getElementById('minusOne').addEventListener('click', () => {
@@ -16,7 +16,7 @@ document.getElementById('minusOne').addEventListener('click', () => {
     if(restaurantsIndex < 0) {
         restaurantsIndex = 4;
     }
-    showRestaurant[restaurantsIndex].style.display = "block";
+    showRestaurant[restaurantsIndex].style.display = "flex";
 });
 
 const dispearDiv = () => {
@@ -29,5 +29,5 @@ const dispearDiv = () => {
 const appearDiv = (n) => {
     dispearDiv();
     restaurantsIndex = n;
-    showRestaurant[restaurantsIndex].style.display = "block";
+    showRestaurant[restaurantsIndex].style.display = "flex";
 }
